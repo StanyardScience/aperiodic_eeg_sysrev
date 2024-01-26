@@ -1,11 +1,11 @@
 #GenCode:OLap6p11, FIG3B
-print(f'FIGURE 3B')
+print(f'FIGURE 2B')
 fig, ax = plt.subplots(1,1,figsize=(10,8))
 axMin = 0.70
 axMax = 2.35
 legendFontSize=7
 studyNum = 0
-def build_a_box_overlapping_Fig3B(data,colour, stage, studyName,age_min=None, age_max=None):
+def build_a_box_overlapping_Fig2B(data,colour, stage, studyName,age_min=None, age_max=None):
     # input structure was [EXPONENT, SD, MEAN_AGE, SD_AGE, N_SAMPLE]
     global studyNum
     studyNum += 1
@@ -83,73 +83,73 @@ def build_a_box_overlapping_Fig3B(data,colour, stage, studyName,age_min=None, ag
         ax.add_artist(ell)
 
 ### Infants ###
-build_a_box_overlapping_Fig3B(CARTER_LENO_2022_group_infant_AE_EORvids,'#6F8FAF',
+build_a_box_overlapping_Fig2B(CARTER_LENO_2022_group_infant_AE_EORvids,'#6F8FAF',
            'inf', 'Carter Leno 2022 G EOR Mixed',None,None)
 
 ### MANUAL EXTRACT OF GLOBAL APERIODIC ###
-build_a_box_overlapping_Fig3B(SCH_VOY_2021_group_AE_40D,'#14cad3',
+build_a_box_overlapping_Fig2B(SCH_VOY_2021_group_AE_40D,'#14cad3',
             'inf','Schaworonkow & Voytek 2021 Mixed (40d) EOR',None, None)
-build_a_box_overlapping_Fig3B(SCH_VOY_2021_group_AE_69D,'#14cad3',
+build_a_box_overlapping_Fig2B(SCH_VOY_2021_group_AE_69D,'#14cad3',
             'inf','Schaworonkow & Voytek 2021 Mixed (69d) EOR',None, None)
-build_a_box_overlapping_Fig3B(SCH_VOY_2021_group_AE_96D,'#14cad3',
+build_a_box_overlapping_Fig2B(SCH_VOY_2021_group_AE_96D,'#14cad3',
             'inf','Schaworonkow & Voytek 2021 Mixed (96d) EOR',None, None)
-build_a_box_overlapping_Fig3B(KARALUNAS_2022_inf_AE_EOR, '#C49102',
+build_a_box_overlapping_Fig2B(KARALUNAS_2022_inf_AE_EOR, '#C49102',
             'inf','Karalunas 2022 Inf G EOR', None,None)
 
 #CHILD
-build_a_box_overlapping_Fig3B(PEISCH_ARNETT2022_group_gAE_EO,'#00cc99',
+build_a_box_overlapping_Fig2B(PEISCH_ARNETT2022_group_gAE_EO,'#00cc99',
             'child','Peisch & Arnett 2022 G EOR',None,None)
 
-build_a_box_overlapping_Fig3B(ROBERTSON2019_group_gAE_EO,'#228b22',
+build_a_box_overlapping_Fig2B(ROBERTSON2019_group_gAE_EO,'#228b22',
             'child','Robertson 2019 G EOR',None, None)
 
-build_a_box_overlapping_Fig3B(WILKINSON2021_group_gAE_EO,'#008736',
+build_a_box_overlapping_Fig2B(WILKINSON2021_group_gAE_EO,'#008736',
             'child','Wilkinson 2021 G EOR',None, None)
-build_a_box_overlapping_Fig3B(HILL2022_group_gAE_EO, '#177245',
+build_a_box_overlapping_Fig2B(HILL2022_group_gAE_EO, '#177245',
             'child','Hill 2022 G EOR', None,None)
-build_a_box_overlapping_Fig3B(HILL2022_group_gAE_EC,'#003300',
+build_a_box_overlapping_Fig2B(HILL2022_group_gAE_EC,'#003300',
             'child','Hill 2022 G ECR',None, None)
-build_a_box_overlapping_Fig3B(TRONDLE2022_group_gAE_EC, '#00703c',
+build_a_box_overlapping_Fig2B(TRONDLE2022_group_gAE_EC, '#00703c',
             'child','Trondle 2022 G ECR',None,None)
-build_a_box_overlapping_Fig3B(McSweeney2021_child_group_gEO, '#2E8857',
+build_a_box_overlapping_Fig2B(McSweeney2021_child_group_gEO, '#2E8857',
             'child','McSweeney 2021 Child G EOR', None,None)
-build_a_box_overlapping_Fig3B(McSweeney2021_child_group_gEC, '#2E8857',
+build_a_box_overlapping_Fig2B(McSweeney2021_child_group_gEC, '#2E8857',
             'child','McSweeney 2021 Child G ECR', None,None)
 
 ## ADOLESCENTS
-build_a_box_overlapping_Fig3B(McSweeney2021_adol_group_gEO, '#CC7722',
+build_a_box_overlapping_Fig2B(McSweeney2021_adol_group_gEO, '#CC7722',
             'adol','McSweeney 2021 Adol G EOR', None,None)
-build_a_box_overlapping_Fig3B(McSweeney2021_adol_group_gEC, '#CC7722',
+build_a_box_overlapping_Fig2B(McSweeney2021_adol_group_gEC, '#CC7722',
             'adol','McSweeney 2021 Adol G ECR', None,None)
-build_a_box_overlapping_Fig3B(OSTLUND2021_group_AE_EC, '#C49102',
+build_a_box_overlapping_Fig2B(OSTLUND2021_group_AE_EC, '#C49102',
             'adol','Ostlund 2021 G ECR', None,None)
-build_a_box_overlapping_Fig3B(OSTLUND2021_group_AE_EO, '#C49102',
+build_a_box_overlapping_Fig2B(OSTLUND2021_group_AE_EO, '#C49102',
             'adol','Ostlund 2021 G EOR', None,None)
-build_a_box_overlapping_Fig3B(KARALUNAS_2022_adol_AE_ECR, '#C49102',
+build_a_box_overlapping_Fig2B(KARALUNAS_2022_adol_AE_ECR, '#C49102',
             'adol','Karalunas 2022 Adol G ECR', None,None)
-build_a_box_overlapping_Fig3B(KARALUNAS_2022_adol_AE_EOR, '#C49102',
+build_a_box_overlapping_Fig2B(KARALUNAS_2022_adol_AE_EOR, '#C49102',
             'adol','Karalunas 2022 Adol G EOR', None,None)
 
 # ### Young Adult ###
-build_a_box_overlapping_Fig3B(KE2022_ya_gAE_EO, '#873600',
+build_a_box_overlapping_Fig2B(KE2022_ya_gAE_EO, '#873600',
             'ya','Ke 2022 G EOR', None,None)
-build_a_box_overlapping_Fig3B(MUTHUKUMARASWAMY_LILEY_2018_ya_gIRASA_ECR_lf, '#D35400',
+build_a_box_overlapping_Fig2B(MUTHUKUMARASWAMY_LILEY_2018_ya_gIRASA_ECR_lf, '#D35400',
             'ya','M & L 2018 1f G ECR', None,None)
-build_a_box_overlapping_Fig3B(MUTHUKUMARASWAMY_LILEY_2018_ya_gIRASA_ECR_hf, '#DC7633',
+build_a_box_overlapping_Fig2B(MUTHUKUMARASWAMY_LILEY_2018_ya_gIRASA_ECR_hf, '#DC7633',
             'ya','M & L 2018 hf G ECR', None,None)
-build_a_box_overlapping_Fig3B(IMMINK_2021_ya_gIRASA_ECR, '#E59866',
+build_a_box_overlapping_Fig2B(IMMINK_2021_ya_gIRASA_ECR, '#E59866',
             'ya','Immink 2021 G ECR', None,None)
-build_a_box_overlapping_Fig3B(CROSS_2022_ya_gIRASA_ECR, '#EDBB99',
+build_a_box_overlapping_Fig2B(CROSS_2022_ya_gIRASA_ECR, '#EDBB99',
             'ya','Cross 2022 G ECR', None,None)
-build_a_box_overlapping_Fig3B(CROSS_2022_ya_gIRASA_EOR, '#F6DDCC',
+build_a_box_overlapping_Fig2B(CROSS_2022_ya_gIRASA_EOR, '#F6DDCC',
             'ya','Cross 2022 G EOR', None,None)
-build_a_box_overlapping_Fig3B(PATHANIA_2021_ya_gAE_EOR, '#FBEEE6',
+build_a_box_overlapping_Fig2B(PATHANIA_2021_ya_gAE_EOR, '#FBEEE6',
             'ya','Pathania 2022 G EOR', None,None)
-build_a_box_overlapping_Fig3B(PATHANIA_2022_ya_gAE_ECR, '#FF8F00',
+build_a_box_overlapping_Fig2B(PATHANIA_2022_ya_gAE_ECR, '#FF8F00',
             'ya','Pathania 2022 G ECR', None,None)
-build_a_box_overlapping_Fig3B(BARRY_DE_BLASIO_2021_ya_gPN_EO, '#BF360C',
+build_a_box_overlapping_Fig2B(BARRY_DE_BLASIO_2021_ya_gPN_EO, '#BF360C',
             'ya','Barry & De Blasio 2021 G EOR', None,None)
-build_a_box_overlapping_Fig3B(BARRY_DE_BLASIO_2021_ya_gPN_EC, '#F4511E',
+build_a_box_overlapping_Fig2B(BARRY_DE_BLASIO_2021_ya_gPN_EC, '#F4511E',
             'ya','Barry & De Blasio 2021 G ECR', None,None)
 
 # Create a separate legend for the markers relating to n per study
@@ -230,6 +230,6 @@ age_labels = ['Inf', 'Todd', 'Child', 'Adol', 'YA', 'Ext Adult']
 age_positions = [0.8, 2.85, 9, 17, 22.5, 30]
 for age_label, age_position in zip(age_labels, age_positions):
     ax.text(age_position, 0.7, age_label, color='grey', fontsize=12, ha='right', va='center', zorder=-1, rotation=0)
-plot_the_key('3B')
-plt.savefig('/Users/username/Desktop/someFolder/anotherFolder/continuedPath/name3b' 
+plot_the_key('2B')
+plt.savefig('/Users/username/Desktop/someFolder/anotherFolder/continuedPath/name2b' 
             + '.pdf', bbox_inches='tight') 
