@@ -1,5 +1,6 @@
 def plot_the_key(which_figure_am_I):
     # defaults for all keys
+    plt.rcParams['font.family'] =  'Helvetica'#'EB Garamond'
     m_sd = 0.1
     age = [28.5, 31.5]
     m = [2.4, 2.2, 2.0, 1.8, 1.6]
