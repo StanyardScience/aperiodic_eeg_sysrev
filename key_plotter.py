@@ -70,7 +70,7 @@ def plot_the_key(which_figure_am_I):
                     xytext=(0,-2.2), ha='center',fontsize=16,weight='bold')
     elif which_figure_am_I == '3b' or  which_figure_am_I == '3B':
         print(f'For {which_figure_am_I} there is no key required.')
-    elif which_figure_am_I == 'SIIIa' or which_figure_am_I == 'S3a' or which_figure_am_I == 'S3A' or which_figure_am_I =='SIIIA':
+    elif which_figure_am_I == 'SVa' or which_figure_am_I == 'Sva' or which_figure_am_I == 'S5A' or which_figure_am_I =='S5a':
         rect = Rectangle((26.8, 1.8), 4.9, .9, fill=None, edgecolor='black', linestyle=(0,(3,1,1,1)), linewidth=2)
         ax.add_patch(rect)
         # AE FOOOF-AE IRASA-PaWN Extra-PLE-Converted HE
@@ -90,4 +90,4 @@ def plot_the_key(which_figure_am_I):
             ax.annotate('Key', (28.2, 2.55), textcoords="offset points", 
                         xytext=(0,-2.2), ha='center',fontsize=16,weight='bold')
     else: 
-        print(f'Entry: {which_figure_am_I} is not in the preset list of 2a, 2b, 3a, 3b, SIIIA/SIIIa/S3A/S3a. Please verify the input')
+        print(f'Entry: {which_figure_am_I} is not in the preset list of 2a, 2b, 3a, 3b, SVA/SVa/S5A/S5a. Please verify the input')
