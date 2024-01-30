@@ -1,5 +1,5 @@
-#GenCode: OLap8p11 FIG4B
-def build_a_box_overlapping(data,colour, stage, studyName,age_min=None, age_max=None):
+#GenCode: OLap8p11 
+def build_a_box_overlapping_3B(data,colour, stage, studyName,age_min=None, age_max=None):
     # input structure was [EXPONENT, SD, MEAN_AGE, SD_AGE, N_SAMPLE]
     global studyNum
     studyNum += 1
@@ -63,7 +63,6 @@ def build_a_box_overlapping(data,colour, stage, studyName,age_min=None, age_max=
               edgecolor=colour, lw=0.5, fill=False)
         ax.add_artist(ell)
 
-        #GenCode: OLap8p2
 fig, ax = plt.subplots(1,1,figsize=(10,8))
 axMin = 0.70
 axMax = 2.35
@@ -71,50 +70,48 @@ legendFontSize=7
 studyNum = 0
 
 ### Infants ###
-build_a_box_overlapping(CARTER_LENO_2022_group_infant_AE_EORvids,'#6F8FAF',
+build_a_box_overlapping_3B(CARTER_LENO_2022_group_infant_AE_EORvids,'#6F8FAF',
            'inf', 'Carter Leno 2022 G EOR Mixed',None,None)
 
 ### MANUAL EXTRACT OF GLOBAL APERIODIC ###
-build_a_box_overlapping(KARALUNAS_2022_inf_AE_EOR,'#6F8FAF',
+build_a_box_overlapping_3B(KARALUNAS_2022_inf_AE_EOR,'#6F8FAF',
            'inf', 'Karalunas 2022 Inf G EOR ',None,None)
-build_a_box_overlapping(SCH_VOY_2021_group_AE_40D,'#14cad3',
+build_a_box_overlapping_3B(SCH_VOY_2021_group_AE_40D,'#14cad3',
             'inf','Schaworonkow & Voytek 2021 Mixed (40d)',None, None)
-build_a_box_overlapping(SCH_VOY_2021_group_AE_69D,'#14cad3',
+build_a_box_overlapping_3B(SCH_VOY_2021_group_AE_69D,'#14cad3',
             'inf','Schaworonkow & Voytek 2021 Mixed (69d)',None, None)
-build_a_box_overlapping(SCH_VOY_2021_group_AE_96D,'#14cad3',
+build_a_box_overlapping_3B(SCH_VOY_2021_group_AE_96D,'#14cad3',
             'inf','Schaworonkow & Voytek 2021 Mixed (96d)',None, None)
 
 #CHILD
-build_a_box_overlapping(PEISCH_ARNETT2022_group_gAE_EO,'#00cc99',
+build_a_box_overlapping_3B(PEISCH_ARNETT2022_group_gAE_EO,'#00cc99',
             'child','Peisch & Arnett 2022 G EOR',None,None)
-
-build_a_box_overlapping(ROBERTSON2019_group_gAE_EO,'#228b22',
+build_a_box_overlapping_3B(ROBERTSON2019_group_gAE_EO,'#228b22',
             'child','Robertson 2019 G EOR',None, None)
-
-build_a_box_overlapping(WILKINSON2021_group_gAE_EO,'#008736',
+build_a_box_overlapping_3B(WILKINSON2021_group_gAE_EO,'#008736',
             'child','Wilkinson 2021 G EOR',None, None)
-
-build_a_box_overlapping(HILL2022_group_gAE_EO, '#177245',
+build_a_box_overlapping_3B(HILL2022_group_gAE_EO, '#177245',
             'child','Hill 2022 G EOR', None,None)
-
-build_a_box_overlapping(McSweeney2021_child_group_gEO, '#2E8857',
+build_a_box_overlapping_3B(McSweeney2021_child_group_gEO, '#2E8857',
             'child','McSweeney 2021 G EOR', None,None)
 
 ## ADOLESCENTS
-build_a_box_overlapping(McSweeney2021_adol_group_gEO, '#CC7722',
+build_a_box_overlapping_3B(McSweeney2021_adol_group_gEO, '#CC7722',
             'adol','McSweeney 2021 G EOR', None,None)
-
-build_a_box_overlapping(OSTLUND2021_group_AE_EO, '#C49102',
+build_a_box_overlapping_3B(OSTLUND2021_group_AE_EO, '#C49102',
             'adol','Ostlund 2021 G EOR', None,None)
-
-build_a_box_overlapping(KARALUNAS_2022_adol_AE_EOR, '#C49102',
+build_a_box_overlapping_3B(KARALUNAS_2022_adol_AE_EOR, '#C49102',
             'adol','Karalunas 2022 Adol G EOR', None,None)
 
 # ### Young Adult ###
-build_a_box_overlapping(KE2022_ya_gAE_EO, '#873600',
+build_a_box_overlapping_3B(PATHANIA_2021_ya_gAE_EOR, '#FBEEE6',
+            'ya','Pathania 2021 G EOR', None,None)
+build_a_box_overlapping_3B(KE2022_ya_gAE_EO, '#873600',
             'ya','Ke 2022 G EOR', None,None)
-build_a_box_overlapping(PATHANIA_2021_ya_gAE_EOR, '#FBEEE6',
-            'ya','Pathania 2022 G EOR', None,None)
+build_a_box_overlapping_3B(BARRY_DE_BLASIO_2021_ya_gPN_EO, '#BF360C',
+            'ya','Barry & De Blasio 2021 G EOR', None,None)
+build_a_box_overlapping_3B(PATHANIA_2022_ya_gAE_ECR, '#FBEEE6',
+            'ya','Pathania 2022 G ECR', None,None)
 
 # Create a separate legend for the markers relating to n per study
 markers_legend_labels = ['n < 15', 
@@ -134,13 +131,13 @@ markers_legend = fig.legend(markers_legend_handles,
                               fontsize=legendFontSize*1.5,
                               loc='lower center', 
                               title='Markers',
-                              bbox_to_anchor=(0.70, -0.133)) #ncol = 5 
+                              bbox_to_anchor=(0.70, -0.12)) #ncol = 5 
 markers_legend.get_title().set_fontweight('bold')
 for text in markers_legend.get_texts():
     text.set_fontsize(legendFontSize*0.8)
 
 studyList_G_R = ['Carter Leno 2022 G EOR Mixed',
-                 'Karalunas 2022 Inf G EOR'
+                 'Karalunas 2022 Inf G EOR',
                  'Schaworonkow and Voytek 2021 40d G EOR Mixed',
                  'Schaworonkow and Voytek 2021 69d G EOR Mixed',
                  'Schaworonkow and Voytek 2021 96d G EOR Mixed',  
@@ -152,6 +149,8 @@ studyList_G_R = ['Carter Leno 2022 G EOR Mixed',
                  'McSweeney 2021 Adol G EOR',  
                  'Ostlund 2021 G EOR', 
                  'Karalunas 2022 Adol G EOR',
+                 'Pathania 2021 G EOR',
+                 'Barry and de Blasio G EOR',
                  'Ke 2022 G EOR', 
                  'Pathania 2022 G EOR']
 from matplotlib.lines import Line2D
@@ -159,12 +158,12 @@ study_legend_labels = [f'{i+1}. {label}' for i, label in enumerate(studyList_G_R
 study_legend_handles = [Line2D([], [], color='none', marker='', linestyle='', label=label)
                         for label in study_legend_labels]
 study_legend = fig.legend(handles=study_legend_handles, fontsize=legendFontSize, loc='lower center',
-                           title='Studies', bbox_to_anchor=(0.475, -0.13), ncol=3)
+                           title='Studies', bbox_to_anchor=(0.475, -0.12), ncol=3)
 study_legend.get_title().set_fontweight('bold')
 fig.subplots_adjust(wspace=1)
 fig.set_size_inches(20, 8)
-fig.text(0.5,0.95, 'Global EOR AE across early development', ha='center',fontsize=25,weight='bold')
-fig.text(0.5, 0.05, 'Age (years)', ha='center',fontsize=18,weight='bold')
+fig.text(0.5,0.9, 'Global EOR AE across early development', ha='center',fontsize=25,weight='bold')
+fig.text(0.5, 0.04, 'Age (years)', ha='center',fontsize=18,weight='bold')
 fig.text(0.08, 0.5, 'Aperiodic exponent ($\mu$V$^2$ Hz$^{-1}$)', 
          va='center', rotation='vertical',fontsize=18, weight='bold')
 plt.axvline(x=2, color='black', linestyle='--', alpha=0.5,zorder=0)
@@ -179,7 +178,9 @@ ax.set_xlim(-1, 33)  # Set the x-axis range for the main plot
 age_labels = ['Inf', 'Todd', 'Child', 'Adol', 'YA', 'Ext Adult']
 age_positions = [0.8, 2.85, 9, 17, 22.5, 30]
 for age_label, age_position in zip(age_labels, age_positions):
-    ax.text(age_position, 0.815, age_label, color='grey', fontsize=12, ha='right', va='center', zorder=-1, rotation=0)
-plot_the_key('4B')
-plt.savefig('/Users/username/Desktop/someFolder/anotherFolder/continuedPath/name4b' 
-            + '.pdf', bbox_inches='tight') 
+    ax.text(age_position, 0.7, age_label, color='grey', fontsize=12, ha='right', va='center', zorder=-1, rotation=0)
+plt.tick_params(axis='y', labelsize=16)
+plt.tick_params(axis='x', labelsize=16)
+plot_the_key('3B')
+#plt.savefig('/Users/username/Desktop/someFolder/anotherFolder/continuedPath/name3b' 
+#            + '.pdf', bbox_inches='tight') 
