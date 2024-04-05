@@ -1,7 +1,7 @@
 # aperiodic_eeg_sysrev
 Aperiodic and Hurst Exponent Systematic Review: Plotting Figures
 
-This repository is the code reference platform for the plotting functions used in the paper "Aperiodic and Hurst EEG exponents across early human brain development: a systematic review" by Stanyard et al (2024), submitted to Neuroscience and Biobehavioural Reviews (DOI: TBA). The functions provided here are for a number of bespoke plotting functions capable of creating ellipsoids and points which map the variability in age and another defining feature, such as in this case, the aperiodic exponent for each dataset. 
+This repository is the code reference platform for the plotting functions used in the paper "Aperiodic and Hurst EEG exponents across early human brain development: a systematic review" by Stanyard et al (2024), submitted to Developmental and Cognitive Neuroscience (DOI: TBA). The functions provided here are for a number of bespoke plotting functions capable of creating ellipsoids and points which map the variability in age and another defining feature, such as in this case, the aperiodic exponent for each dataset. 
 
 **Access to the original data used in the paper**
 
