@@ -15,8 +15,4 @@ Shown below is Figure 2A and 2B from our paper, for which the relevant code is c
 
 ![NBBR_FIG2_REVISED](https://github.com/StanyardScience/aperiodic_eeg_sysrev/assets/54684253/e25fe47b-f3f1-4920-ae8b-7fd126f4533a)
 
-Given the potential novelty of this tool, we make this freely accessible to support the community, and as a companion tool to our paper. 
-For improvement suggestions, collaboration or paper-related questions, please contact me directly at stanyardscience@gmail.com
-
-Ryan,
-November 2023 
+For improvement suggestions, collaboration or paper-related questions, please email stanyardscience@gmail.com
